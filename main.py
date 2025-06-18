@@ -19,10 +19,10 @@ client = OpenAI(
 
 # Load data (1).json
 try:
-    with open("data/data (1).json", "r") as f:
+    with open("data (1).json", "r") as f:
         course_data = json.load(f)
 except FileNotFoundError:
-    raise Exception("data (1).json not found in data/ folder")
+    raise Exception("data (1).json not found in folder")
 
 # Handle course_data as a list or dictionary
 context_items: List[Dict] = []
